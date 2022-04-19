@@ -1,1 +1,5 @@
 # LodashA
+
+nodemon 
+
+npm start
