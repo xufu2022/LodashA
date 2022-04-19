@@ -11,10 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/lodash": "^4.14.182"
+
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "lite-server": "^2.5.4",
-    "ts-node": "^10.7.0"
+    "ts-node": "^10.7.0",
+    "@types/lodash": "^4.14.182"
   }
 }
