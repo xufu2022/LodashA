@@ -150,5 +150,12 @@ log(template2({name:'fred'}))
 log(template2({name:'fred', age: 10}))
 log(template3({value:'<script>'}))
 
+let compiled_temp = _.template(
+    "<% _.forEach(students, function(students) " +
+      "{ %><li><b><%- students %></b></li><% }); %>"
+  )({ students: ["Rahul", "Rohit"] });
+    
+  // Displays the output
+  console.log(compiled_temp);
 
 
