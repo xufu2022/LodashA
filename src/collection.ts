@@ -77,3 +77,17 @@ console.log(_.invert(object));
 var object2={a:1,b:2,c:2} // same value override the item before
 console.log(_.invert(object2));
 
+//3. EachRightForEachRight
+//4. Sample Size
+//5. CountBy
+//11. Map
+//12
+//13
+//17. Partition
+//18. Sample
+//19. Shuffle
+//21. Some and Every
+//23. FlatMap, FlatMapDeep and FlatMapDepth
+//24. InvokeMap
+//25. KeyBy
+//26. Reduce and ReduceRight
