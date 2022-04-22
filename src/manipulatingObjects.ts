@@ -92,3 +92,19 @@ const ass1={a:1,b:2}
 log(_.assign({c:3},ass1))
 log(_.assign(ass1,{c:3})) //{ a: 1, b: 2, c: 3 }
 
+header('assignIn')
+// it will assign any inherited properties as well
+// Vehicle.prototype.Material='metal'
+// _.assignIn({make:'volva'},new Vehicle)
+header('assignWith')
+// use customized function to determine how the values are assigned
+function customizer(obj1 : any,srcVal :any){
+  return _.isUndefined(obj1)?[srcVal]:obj1;}
+log(_.assignWith({a:23},{a:99},customizer)); //{ a: 23 }
+
+header('assignInWith')
+//question on assignInWith vs extendWith
+// _.assignInWith({a:10}, new Foo, new Bar, customizer)
+//_.extendWith({}, new Foo, new Bar, customizer)
+
+//v17
