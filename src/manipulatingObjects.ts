@@ -107,4 +107,17 @@ header('assignInWith')
 // _.assignInWith({a:10}, new Foo, new Bar, customizer)
 //_.extendWith({}, new Foo, new Bar, customizer)
 
-//v17
+header('invertby')
+//not mutated
+const invb={a:1,b:2,c:2} 
+log(_.invert(invb)) //{ a: 1, b: 2, c: 2 }
+log(_.invertBy(invb)) //{ '1': [ 'a' ], '2': [ 'b', 'c' ] }
+log(_.invertBy(invb, i=>'group' + i)) //{ group1: [ 'a' ], group2: [ 'b', 'c' ] }
+
+header('keys and values')
+const key1={a:1,b:2,c:3} ;
+const keyvechile={wheel:4,manufactor:'',model:3} 
+log(_.keys(key1))
+log(_.keys(keyvechile))
+log(_.values(keyvechile))
+log(_.values(key1))
