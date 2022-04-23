@@ -9,4 +9,5 @@ npm start
   > example nodemon
     
       nodemon src/collection.ts
+      nodemon src/functions.ts
       nodemon 'src/manipulatingObjects.ts'
